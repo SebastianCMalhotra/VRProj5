@@ -1,8 +1,5 @@
-# This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-#
-.utmp/
+# This .gitignore should be placed at the root of your Unity project directory
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -10,14 +7,15 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-*.log
 
-# MemoryCaptures can get excessive in size.
-# They also could contain extremely sensitive data
+# MemoryCaptures can get excessive in size
 /[Mm]emoryCaptures/
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -73,3 +71,23 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# VRProj5 Unity project
+VRProj5/[Ll]ibrary/
+VRProj5/[Tt]emp/
+VRProj5/[Oo]bj/
+VRProj5/[Bb]uild/
+VRProj5/[Bb]uilds/
+VRProj5/[Ll]ogs/
+VRProj5/[Uu]ser[Ss]ettings/
+VRProj5/[Mm]emoryCaptures/
+VRProj5/[Rr]ecordings/
+*.log
